@@ -56,6 +56,7 @@ import wolverineada from "../assets/wolverineada.jpg"
 import wolviebone from "../assets/wolviebone.jpg"
 import zangief from "../assets/zangief.jpg"
 import title from "../assets/title.gif"
+import initial from "../assets/default.jpg"
 import "./Styles.css"
 
 akuma as unknown as HTMLImageElement
@@ -66,11 +67,11 @@ function Home() {
         Imagem: any
     }
 
-    const [character1AfretClick, setcharacter1AfretClick] = useState<characterObject>({ Name: "", Imagem: { akuma } });
+    const [character1AfretClick, setcharacter1AfretClick] = useState<characterObject>({ Name: "", Imagem: initial });
     const [assist1AfretClick, setassist1AfretClick] = useState('');
-    const [character2AfretClick, setcharacter2AfretClick] = useState<characterObject>({ Name: "", Imagem: { akuma } });
+    const [character2AfretClick, setcharacter2AfretClick] = useState<characterObject>({ Name: "", Imagem: initial });
     const [assist2AfretClick, setassist2AfretClick] = useState('');
-    const [character3AfretClick, setcharacter3AfretClick] = useState<characterObject>({ Name: "", Imagem: { akuma } });
+    const [character3AfretClick, setcharacter3AfretClick] = useState<characterObject>({ Name: "", Imagem: initial });
     const [assist3AfretClick, setassist3AfretClick] = useState('');
 
     const characters = [{ Name: "Akuma", Imagem: akuma },
