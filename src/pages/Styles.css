@@ -1,0 +1,92 @@
+.mainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(29, 4, 75), rgb(32, 1, 137));
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner {
+    width: 25%;
+    height: 20%;
+}
+
+.cardsContainer {
+    display: flex;
+    margin-top: -40px;
+}
+
+.cardsDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.elementsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.images {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 250px;
+    height: 300px;
+}
+
+.singleButtons {
+    background-color: rgb(15, 100, 121);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: solid rgb(75, 79, 82) 5px;
+    color: rgb(46, 71, 52);
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.teamDiv{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.teamButton{
+    background-color: rgb(15, 100, 121);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: solid rgb(75, 79, 82) 5px;
+    color: rgb(178, 196, 182);
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
