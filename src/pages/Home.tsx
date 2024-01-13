@@ -143,6 +143,10 @@ function Home() {
         console.log(randomElement);
         setcharacter1AfretClick(randomElement as any)
         setassist1AfretClick(randomAssist)
+        const div1 = document.querySelector(".elementsDiv1")
+        div1?.classList.add("flip")
+        const image1 = document.querySelector(".images1")
+        image1?.classList.add("flipper")
     }
     function randomCharacter2() {
         const randomElement = characters[Math.floor(Math.random() * characters.length)];
@@ -150,6 +154,10 @@ function Home() {
         console.log(randomElement);
         setcharacter2AfretClick(randomElement as any)
         setassist2AfretClick(randomAssist)
+        const div2 = document.querySelector(".elementsDiv2")
+        div2?.classList.add("flip")
+        const image2 = document.querySelector(".images2")
+        image2?.classList.add("flipper")
     }
     function randomCharacter3() {
         const randomElement = characters[Math.floor(Math.random() * characters.length)];
@@ -157,12 +165,16 @@ function Home() {
         console.log(randomElement);
         setcharacter3AfretClick(randomElement as any)
         setassist3AfretClick(randomAssist)
+        const div3 = document.querySelector(".elementsDiv3")
+        div3?.classList.add("flip")
+        const image3 = document.querySelector(".images3")
+        image3?.classList.add("flipper")
     }
 
     function randomTeam() {
         randomCharacter1()
         randomCharacter2()
-        randomCharacter3()
+        randomCharacter3()       
     }
 
     return (
@@ -173,21 +185,21 @@ function Home() {
                 </div>
                 <div className="cardsContainer">
                     <div className="cardsDiv">
-                        <div className="elementsDiv">
+                        <div className="elementsDiv1">
                             <h2>{character1AfretClick.Name}</h2>
-                            <img className="images" src={character1AfretClick.Imagem} alt={character1AfretClick.Name} />
+                            <img className="images1" src={character1AfretClick.Imagem} alt={character1AfretClick.Name} />
                             <h3>{assist1AfretClick}</h3>
                             <button className="singleButtons" onClick={randomCharacter1}>Clique para selecionar personagem</button>
                         </div>
-                        <div className="elementsDiv">
+                        <div className="elementsDiv2">
                             <h2>{character2AfretClick.Name}</h2>
-                            <img className="images" src={character2AfretClick.Imagem} alt={character2AfretClick.Name} />
+                            <img className="images2" src={character2AfretClick.Imagem} alt={character2AfretClick.Name} />
                             <h3>{assist2AfretClick}</h3>
                             <button className="singleButtons" onClick={randomCharacter2}>Clique para selecionar personagem</button>
                         </div>
-                        <div className="elementsDiv">
+                        <div className="elementsDiv3">
                             <h2>{character3AfretClick.Name}</h2>
-                            <img className="images" src={character3AfretClick.Imagem} alt={character3AfretClick.Name} />
+                            <img className="images3" src={character3AfretClick.Imagem} alt={character3AfretClick.Name} />
                             <h3>{assist3AfretClick}</h3>
                             <button className="singleButtons" onClick={randomCharacter3}>Clique para selecionar personagem</button>
                         </div>
